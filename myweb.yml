@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  # sudo permission
+  # sudo permission update
   become: true
 
   vars:
