@@ -1,0 +1,11 @@
+pipeline {
+  agent any 
+  stages {
+    stage('working with ci') {
+      steps {
+        println "welcome to ci"
+      }
+    }
+  }
+}
+
