@@ -1,4 +1,2 @@
-[web]
-appserver1
-appserver2
-
+[dev]
+app1
