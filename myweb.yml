@@ -5,8 +5,8 @@
 
   vars:
     tomcat_folder: bin
-    tomcat_path: "/root/tomcat8/{{ tomcat_folder }}"
-    grep_string: "[/]root/tomcat8/{{ tomcat_folder }}"
+    tomcat_path: "/root/tomcat9/{{ tomcat_folder }}"
+    grep_string: "[/]root/tomcat9/{{ tomcat_folder }}"
 
   tasks:
     - name: Copying the war file to the destination
