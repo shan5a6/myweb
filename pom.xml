@@ -44,7 +44,7 @@
 		<repository>
 			<id>nexus</id>
 			<name>Releases</name>
-			<url>http://107.23.207.158:8081/repository/maven-releases/</url>
+			<url>http://3.238.81.147:8081/repository/Sample_Devops/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
