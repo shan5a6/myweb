@@ -1,0 +1,38 @@
+---
+- hosts: all
+  # sudo permission
+  become: true
+
+  vars:
+    tomcat_folder: bin
+    tomcat_path: "/root/tomcat8/{{ tomcat_folder }}"
+    grep_string: "[/]root/tomcat8/{{ tomcat_folder }}"
+
+  tasks:
+    - name: Copying the war file to the destination
+      copy: src=/root/myweb/myweb-0.12.0.war dest="{{ tomcat_path }}/../webapps/"
+
+    - name: ==> shutdown qle tomcat ,path = "{{ tomcat_path }}/bin/"
+      command: sh {{ tomcat_path }}/shutdown.sh
+
+    - name: ==> sleep 3s
+      command: sleep 3s
+
+    - name: Check if Apache is running
+      shell: ps aux | grep '{{ grep_string }}' | awk '{print $2}'
+      ignore_errors: yes
+      changed_when: false
+      register: service_apache_status
+
+    - debug: msg="Check if Apache is running {{ service_apache_status }}"
+    - debug: msg="service_apache_status.stdout != '' =  {{ service_apache_status.stdout != ''}}"
+
+    - name: kill process is tomcat is still running
+      shell: kill $(ps aux | grep '{{ grep_string }}' | awk '{print $2}')
+      when: service_apache_status.stdout != ''
+
+    - command: sleep 1s
+      when: service_apache_status.stdout != ''
+
+    - name: ==> startup qle tomcat , path = {{ tomcat_path }}/bin/startup.sh
+      shell: setsid /bin/sh -i -c "{{ tomcat_path }}/startup.sh"
