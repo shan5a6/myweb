@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>in.jashwanth</groupId>
-	<artifactId>myweb</artifactId>
+	<artifactId>newweb</artifactId>
 	<packaging>war</packaging>
-	<version>0.12.5</version>
+	<version>0.12.7</version>
 	<name>myweb Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -44,12 +44,12 @@
 		<repository>
 			<id>nexus</id>
 			<name>Releases</name>
-			<url>http://52.203.37.98:8081/repository/maven-releases/</url>
+			<url>http://44.203.40.30:8081/repository/java-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>Snapshot</name>
-			<url>http://52.203.37.98:8081/repository/maven-snapshots/</url>
+			<url>http://44.203.40.30:8081/repository/java-snapshots/</url>
 		</snapshotRepository>
   	</distributionManagement>
 	
