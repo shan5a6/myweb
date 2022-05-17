@@ -4,7 +4,11 @@
 	<groupId>in.jashwanth1234</groupId>
 	<artifactId>newweb</artifactId>
 	<packaging>war</packaging>
+ releasebranch
 	<version>0.12.7</version>
+  =======
+	<version>0.12.0</version>
+ master
 	<name>myweb Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
