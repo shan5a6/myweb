@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>in.shan5a6</groupId>
+	<groupId>in.jashwanth1234</groupId>
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
 	<version>0.12.5</version>
@@ -44,12 +44,12 @@
 		<repository>
 			<id>nexus</id>
 			<name>Releases</name>
-			<url>http://107.23.207.158:8081/repository/maven-releases/</url>
+			<url>http://52.203.37.98:8081/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>Snapshot</name>
-			<url>http://107.23.207.158:8081/repository/maven-snapshots/</url>
+			<url>http://52.203.37.98:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
   	</distributionManagement>
 	
