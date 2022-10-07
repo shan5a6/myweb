@@ -1,4 +1,4 @@
-package in.mahipal.myweb1.controller;
+package in.mahipal.myweb.controller;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
