@@ -1,4 +1,4 @@
-package in.mahipalsuram.myweb1.controller;
+package in.mahipalsuram.myweb.controller;
 /*
  * 
  */
