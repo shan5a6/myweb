@@ -1,0 +1,8 @@
+organization=lakshman
+projectKey=lakshmanasairam
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.33544
+branch=master
+dashboardUrl=https://sonarcloud.io/dashboard?id=lakshmanasairam&branch=master
+ceTaskId=AYPmGZVK8-Ku3zij1pSM
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYPmGZVK8-Ku3zij1pSM
