@@ -3,8 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>in.shan5a6</groupId>
 	<artifactId>myweb</artifactId>
+<<<<<<< HEAD
 	<packaging>war</packaging>
 	<version>0.12.5</version>
+=======
+	<packaging>war</packaging
+	<version>0.12.5</version>
+>>>>>>> e2e8a7ff23fdc85c14f21a6be4028849d72c336c
+>>>>>>> d62799c5601a760b256c79fb1f6917102a6c2ae7
 	<name>myweb Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
