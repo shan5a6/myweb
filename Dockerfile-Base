@@ -19,7 +19,7 @@ RUN wget https://downloads.apache.org/maven/maven-3/${Mvn_Version}/binaries/apac
 
 # Installing and configuring Tomcat
 
-ENV Tomcat_Version=8.5.51
+ENV Tomcat_Version=8.5.84
 RUN     wget http://www-eu.apache.org/dist/tomcat/tomcat-8/v${Tomcat_Version}/bin/apache-tomcat-${Tomcat_Version}.tar.gz && \
         tar xvfz apache-tomcat-${Tomcat_Version}.tar.gz && \
         mkdir -p /opt/tomcat/ /opt/myapplication/ -p && \
