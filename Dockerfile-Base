@@ -6,7 +6,7 @@ RUN yum install java-1.8.0-openjdk-devel wget git -y
 EXPOSE 8080
 
 # Installing Maven
-ENV Mvn_Version=3.6.3
+ENV Mvn_Version=3.8.6
 ENV M2_HOME=/usr/local/apache-maven/apache-maven-${Mvn_Version}
 ENV M2="${M2_HOME}/bin"
 ENV PATH=$PATH:$M2
@@ -19,8 +19,8 @@ RUN wget https://downloads.apache.org/maven/maven-3/${Mvn_Version}/binaries/apac
 
 # Installing and configuring Tomcat
 
-ENV Tomcat_Version=8.5.84
-RUN     wget http://www-eu.apache.org/dist/tomcat/tomcat-8/v${Tomcat_Version}/bin/apache-tomcat-${Tomcat_Version}.tar.gz && \
+ENV Tomcat_Version=10.0.27
+RUN     wget http://www-eu.apache.org/dist/tomcat/tomcat-10/v${Tomcat_Version}/bin/apache-tomcat-${Tomcat_Version}.tar.gz && \
         tar xvfz apache-tomcat-${Tomcat_Version}.tar.gz && \
         mkdir -p /opt/tomcat/ /opt/myapplication/ -p && \
         mv apache-tomcat-${Tomcat_Version}.tar.gz /tmp/ && \
