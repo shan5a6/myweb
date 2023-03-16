@@ -1,0 +1,8 @@
+organization=pipeline-test-1
+projectKey=pipeline-test-1_pr-1
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.39045
+branch=master
+dashboardUrl=https://sonarcloud.io/dashboard?id=pipeline-test-1_pr-1&branch=master
+ceTaskId=AYbj_B1zVFZrKKwz-MRk
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYbj_B1zVFZrKKwz-MRk
