@@ -1,0 +1,8 @@
+organization=dvs-pr-pipeline
+projectKey=dvs-pr-pipeline_ci-phase-1
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.39239
+branch=master
+dashboardUrl=https://sonarcloud.io/dashboard?id=dvs-pr-pipeline_ci-phase-1&branch=master
+ceTaskId=AYb-ganyPIB2R57zWe76
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYb-ganyPIB2R57zWe76
